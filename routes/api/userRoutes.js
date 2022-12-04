@@ -3,6 +3,7 @@ const router = require("express").Router();
 
 // set the requirements once the user controllers are set up
 const { 
+
     getAllUsers, 
     createUser, 
     getSingleUser, 
@@ -10,8 +11,8 @@ const {
     removeUser, 
     addFriend, 
     removeFriend
+} = require ("../../controllers/userController");
 
-} = require("../../controllers/userController");
 
 // get all users and create new user
 router.route("/").get(getAllUsers).post(createUser);

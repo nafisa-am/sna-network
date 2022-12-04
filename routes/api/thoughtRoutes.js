@@ -13,16 +13,16 @@ const {
  } = require ("../../controllers/thoughtController");
 
 // Gets all thoughts and posts it //
-router.Route("/").get(getAllThoughts).post(createThought);
+router.route("/").get(getAllThoughts).post(createThought);
 
 // Gets, updates, and deletes a thought //
-router.Route("/:id").get(getSingleThought).put(updateSingleThought).delete(removeThought);
+router.route("/:id").get(getSingleThought).put(updateSingleThought).delete(removeThought);
 
 // Creates a reaction with the thought ID //
-router.Route("/:thoughtId/reactions").post(addReaction);
+router.route("/:thoughtId/reactions").post(addReaction);
 
 // Deletes a reaction with the reaction ID //
-router.Route("/:thoughtId/reactions/:reactionId").delete(removeReaction);
+router.route("/:thoughtId/reactions/:reactionId").delete(removeReaction);
 
 module.exports = router;
 
