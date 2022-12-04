@@ -34,7 +34,9 @@ const userController = {
     // Gets a user by ID //
     async getSingleUser({ params }, res) {
       try {
-        const dbUser = await User.findOne({ _id: params.id }).populate({ path: "thoughts", select: "-__v" }).select("-__v");
+        const dbUser = await User.findOne({ _id: params.id })
+        .populate({ path: "thoughts", select: "-__v" })
+        .select("-__v");
         if (!dbUser) return res.status(404).json({ message: "Can not find user with this id!" });
         res.json(dbUser);
       } catch (err) {
@@ -86,7 +88,7 @@ const userController = {
       } catch (err) {
         res.status(500).json(err);
       }
-    },  
+    }, 
   };
 
 module.exports = userController;
