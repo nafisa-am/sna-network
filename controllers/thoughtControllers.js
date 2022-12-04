@@ -2,7 +2,7 @@ const { Thought, User } = require("../models");
 
 const thoughtController = {
 
-    // Getting all thoughts //
+    // Getting all thoughts data //
 
     async getAllThoughts(req, res) {
         try {
