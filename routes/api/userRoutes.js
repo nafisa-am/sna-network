@@ -3,7 +3,6 @@ const router = require("express").Router();
 
 // set the requirements once the user controllers are set up
 const { 
-
     getAllUsers, 
     createUser, 
     getSingleUser, 
