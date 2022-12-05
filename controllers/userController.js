@@ -22,11 +22,14 @@ const userController = {
     // Creates a user //
 
     async createUser({ body }, res) {
+      console.log("made it to create user ; ", body)
         try {
           const dbUser = await User.create(body);
+
           if (!dbUser) return res.status(400).json({ message: "Bad Request!" });
           res.json({ dbUser, message: "A user was created successfully" });
         } catch (err) {
+          console.log("error received " , err)
           res.status(500).json(err);
         }
       },
