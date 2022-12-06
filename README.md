@@ -44,6 +44,10 @@ Steps to follow for installation:
 
 ## Screenshots
 
+<img width="1440" alt="Screenshot 2022-12-06 at 11 25 04" src="https://user-images.githubusercontent.com/108237958/205901402-ef20d5ea-df1d-450a-b094-191848454c2c.png">
+<img width="1440" alt="Screenshot 2022-12-06 at 11 25 19" src="https://user-images.githubusercontent.com/108237958/205901413-ac63451d-4912-456d-b847-16ef55d75da5.png">
+
+
 
 ## Links
 
